@@ -1,0 +1,10 @@
+<form action="workshops/insert" method="post">
+<% @workshops.each do |w| %>
+  <input type="checkbox" name="workshop_ids[]" 
+    <% if @selected.include? w.id %>
+      <%= " checked " %>
+    <% end %>
+    value="<%= w.id%>"><%= w.title %><br />
+<% end %>
+  <input type="submit" value="Submit">
+</form>

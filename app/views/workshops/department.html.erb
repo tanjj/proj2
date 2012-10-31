@@ -1,0 +1,10 @@
+<!-- app/views/workshops/department.html.erb -->
+<form action="deptsummary" method="post">
+  <select name="department" size="3">
+    <% @departments.each do |d| %>
+      <option><%= d %></option>
+    <% end %>
+  </select>
+  <br />
+  <input type="submit" value="Choose">
+</form>

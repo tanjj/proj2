@@ -1,0 +1,12 @@
+<!-- app/views/workshops/deptsummary.html.erb -->
+<h2><%=params[:department]%> summary</h2>
+<table border="1">
+  <tr>
+    <th>Workshop</th> <th>Total count</th>
+  </tr>
+  <% @counts.each do |c| %>
+    <tr>
+      <td><%= c[:title] %></td> <td><%= c[:num ] %></td>
+    </tr>
+  <% end %>
+</table>

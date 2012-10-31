@@ -1,0 +1,11 @@
+<!-- app/views/workshops/select_workshop.html.erb -->
+<form action="show_participants" method="post">
+  <select name="workshop_id" size="3">
+    <% @workshops.each do |w| %>
+      <option value="<%= w.id %>">
+        <%= w.title %>
+      </option>
+    <% end %>
+  </select>
+  <input type="submit" value="Choose">
+</form>

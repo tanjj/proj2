@@ -1,0 +1,5 @@
+<!-- app/views/workshops/show_participants.html.erb -->
+<h2><%= @title %> participants</h2>
+<% @participants.each do |p| %>
+  <%= p[:name] %><br />
+<% end %>

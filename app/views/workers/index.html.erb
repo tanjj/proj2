@@ -1,0 +1,8 @@
+<!-- app/views/workers -->
+<select name="worker_id" size="3">
+  <% @workers.each do |w| %>
+    <option value="<%=w.id%>">
+      <%= w.name %>
+    </option>
+  <% end %>
+</select>

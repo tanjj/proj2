@@ -1,0 +1,8 @@
+<!-- app/views/workers/admin.html.erb -->
+<% if cookies.signed[:id] == 1 %>
+<%= link_to "Display workshop participants",
+  {:controller => "workshops", :action =>"select_workshop"} %>
+<br />
+<%= link_to "Display department statistics",
+  {:controller => "workshops", :action => "department"} %>
+<% end %>

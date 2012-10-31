@@ -1,0 +1,21 @@
+# config/routes.rb
+Proj1::Application.routes.draw do
+  root :to => "workshops#summary"
+  match "workers/index" => "workers#index"
+  match "workers/admin" => "workers#admin"
+  match "workers/login" => "workers#login"
+  match "workers/logout" => "workers#logout"
+  match "workers/create" => "workers#create"
+  match "workers/destroy" => "workers#destroy" 
+  match "workers/modify" => "workers#modify"
+  match "workers/who" => "workers#who"
+  match "workshops/index" => "workshops#index"
+  match "workshops/insert" => "workshops#insert"
+  match "workshops/display" => "workshops#display"  
+  match "workshops/department" => "workshops#department"
+  match "workshops/success" => "workshops#success"
+  match "workshops/deptsummary" => "workshops#deptsummary"
+  match "workshops/select_workshop" => "workshops#select_workshop"
+  match "workshops/summary" => "workshops#summar"
+  match "workshops/show_participants" => "workshops#show_participants"
+end

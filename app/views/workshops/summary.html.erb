@@ -1,0 +1,14 @@
+<!-- app/views/workshops/summary.html.erb -->
+<%= link_to "Login", :controller => "workers",
+  :action=> "login" %>
+<table border="1">
+  <tr>
+    <th>Workshop</th> <th>Number signed up</th>
+  </tr>
+  <% @values.each do |v| %>
+    <tr>
+      <td><%= v[:title] %></td>
+      <td><%= v[:count] %></td>
+    </tr>
+  <% end %>
+</table>
